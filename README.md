@@ -1,18 +1,27 @@
 # Service AI In-A-Box
 
-Free-to-try AI front desk for local service businesses.
+AI front desk that never misses a job for local service businesses.
 
 Live: https://simple-ai-commerce.vercel.app/
 
-Sponsored by Creignificent LLC.
+## Deploy Vercel
+Import CreigT/simple-ai-commerce. Keep existing project. Add env from .env.example. Deploy main.
 
-## Model
-- Free: 10 chats, 5 photo estimates, watermarked quote page. No card.
-- Starter $97/mo
-- Pro $197/mo
+## Deploy Netlify
+Import the same GitHub repo. Build command npm run build. Add the same env vars.
 
-## Setup
-1. Run supabase/schema.sql in Supabase SQL editor
-2. Add .env.example vars in Vercel on project simple-ai-commerce
-3. Twilio webhook: /api/twilio/inbound
-4. Stripe webhook: /api/stripe/webhook
+## Supabase
+Run supabase/schema.sql. Create bucket job-photos.
+
+## Webhooks
+Twilio inbound: https://simple-ai-commerce.vercel.app/api/twilio/inbound
+Stripe webhook: https://simple-ai-commerce.vercel.app/api/stripe/webhook
+
+## SELF-CHECK
+[x] package.json name = service-ai-in-a-box
+[x] homepage headline locked
+[x] pricing $0 / $97 / $197
+[x] paywall 403 helpers present
+[x] vercel.json and netlify.toml
+[x] .env.example keys listed
+[ ] npm run build must be confirmed on Vercel logs for this commit

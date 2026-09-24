@@ -1,33 +1,36 @@
 {
-  "name": "simple-ai-commerce",
-  "version": "2.0.0",
+  "name": "service-ai-in-a-box",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.5.2",
-    "@supabase/supabase-js": "^2.46.1",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.453.0",
-    "next": "^14.2.15",
-    "openai": "^4.67.3",
+    "next": "14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "stripe": "^16.12.0",
-    "tailwind-merge": "^2.5.4",
-    "twilio": "^5.3.5"
+    "@supabase/supabase-js": "^2.45.0",
+    "@supabase/ssr": "^0.4.0",
+    "openai": "^4.52.0",
+    "stripe": "^16.6.0",
+    "lucide-react": "^0.400.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20.16.11",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.3"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
   }
 }
