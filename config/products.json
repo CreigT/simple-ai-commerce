@@ -1,0 +1,39 @@
+[
+  {
+    "id": "starter-kit",
+    "name": "Harbor Starter Kit",
+    "price": 900,
+    "currency": "usd",
+    "type": "one_time",
+    "badge": "Most popular",
+    "summary": "A complete pack of store templates, product briefs, and launch checklists.",
+    "description": "Everything you need to launch a simple digital store this week. Includes landing page copy, product naming sheets, pricing examples, and a 14-day launch plan.",
+    "deliverable": "Instant PDF + Notion checklist (demo file included).",
+    "file": "/downloads/starter-kit.txt"
+  },
+  {
+    "id": "prompt-pack",
+    "name": "Commerce Prompt Pack",
+    "price": 1900,
+    "currency": "usd",
+    "type": "one_time",
+    "badge": "",
+    "summary": "120 ready-to-use prompts for product research, ads, emails, and support.",
+    "description": "A practical prompt library for running a small store with AI. Organized by job: research, listing, ads, email, support, and refunds.",
+    "deliverable": "Instant download of the prompt pack.",
+    "file": "/downloads/prompt-pack.txt"
+  },
+  {
+    "id": "member-pass",
+    "name": "Member Pass",
+    "price": 2900,
+    "currency": "usd",
+    "type": "recurring",
+    "interval": "month",
+    "badge": "Best value",
+    "summary": "Monthly drop of new products, playbooks, and agent updates.",
+    "description": "A simple membership. Each month you get a new playbook, a product idea brief, and access to member-only unlocks.",
+    "deliverable": "Membership access after checkout. Cancel anytime in Stripe.",
+    "file": "/downloads/member-pass.txt"
+  }
+]
