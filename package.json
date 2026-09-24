@@ -1,6 +1,6 @@
 {
   "name": "simple-ai-commerce",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,9 +8,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.46.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.453.0",
     "next": "^14.2.15",
+    "openai": "^4.67.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "stripe": "^16.12.0"
+    "stripe": "^16.12.0",
+    "tailwind-merge": "^2.5.4",
+    "twilio": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3"
   }
 }
