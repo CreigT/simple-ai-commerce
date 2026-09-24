@@ -1,0 +1,6 @@
+Member Pass
+===========
+
+This is the demo membership file.
+
+Each month, replace this file or add a new drop in /public/downloads.

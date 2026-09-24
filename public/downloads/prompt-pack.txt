@@ -1,0 +1,8 @@
+Commerce Prompt Pack
+====================
+
+Replace this demo file with your full prompt library.
+
+Example prompt:
+Write a 120-word product page for a $19 digital pack.
+Use plain language. State exactly what the buyer receives.

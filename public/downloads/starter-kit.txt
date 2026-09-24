@@ -1,0 +1,12 @@
+Harbor Starter Kit
+==================
+
+This is the demo file customers receive after checkout.
+
+Replace this file with your real PDF, zip, or guide.
+
+Included in a real kit:
+- Landing page copy blocks
+- Product naming sheet
+- Pricing examples
+- 14-day launch plan
