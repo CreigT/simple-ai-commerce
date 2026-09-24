@@ -12,7 +12,8 @@ export async function POST(request) {
   }
 
   const store = getStore();
-  const origin = store.url.replace(/\/$/, "");
+  const headerOrigin = request.headers.get("origin");
+  const origin = (headerOrigin || store.url).replace(/\/$/, "");
   const stripe = getStripe();
 
   if (!stripe) {
@@ -23,6 +24,7 @@ export async function POST(request) {
     });
   }
 
+  const token = createAccessToken(product.id);
   const session = await stripe.checkout.sessions.create({
     mode: product.type === "recurring" ? "subscription" : "payment",
     customer_email: body.email || undefined,
@@ -40,7 +42,7 @@ export async function POST(request) {
       },
     ],
     metadata: { productId: product.id },
-    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product.id}&token=${createAccessToken(product.id)}`,
+    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product.id}&token=${token}`,
     cancel_url: `${origin}/product/${product.id}`,
   });
 
