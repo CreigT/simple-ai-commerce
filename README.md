@@ -1,4 +1,4 @@
-# Harbor — Simple AI Commerce
+# Simple AI Commerce
 
 A complete, small digital store you can deploy today.
 
@@ -55,7 +55,7 @@ Default catalog is intentionally cheap and clear:
 
 | Product | Price |
 |---|---|
-| Harbor Starter Kit | $9 |
+| Starter Kit | $9 |
 | Commerce Prompt Pack | $19 |
 | Member Pass | $29 / month |
 

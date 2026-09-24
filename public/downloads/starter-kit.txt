@@ -1,5 +1,5 @@
-Harbor Starter Kit
-==================
+Simple AI Commerce Starter Kit
+==============================
 
 This is the demo file customers receive after checkout.
 

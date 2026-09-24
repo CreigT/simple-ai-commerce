@@ -2,7 +2,7 @@ import "./globals.css";
 import { getStore } from "@/lib/store";
 
 export const metadata = {
-  title: "Harbor — Simple AI Commerce",
+  title: "Simple AI Commerce",
   description: "A simple digital storefront with a fair paywall. Add your variables and deploy.",
 };
 
