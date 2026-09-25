@@ -1,20 +1,22 @@
-import Link from "next/link";
-import UsageBar from "@/components/UsageBar";
+"use client";
+import { useState } from "react";
+import PaywallModal from "@/components/PaywallModal";
 export default function DashboardPage() {
+  const chats = 7;
+  const estimates = 3;
+  const [open, setOpen] = useState(chats >= 10 || estimates >= 5);
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
       <h1 className="text-3xl font-semibold">Front desk</h1>
-      <p className="text-sm text-teal-dark/70">Free plan · Demo Clean Co</p>
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
-        <UsageBar used={5} limit={10} label="AI conversations" />
-        <UsageBar used={2} limit={5} label="Photo estimates" />
-      </div>
+      <p className="mt-3 rounded-2xl bg-[#E8F5E9] p-4 text-sm">Free: {chats}/10 chats used, {estimates}/5 estimates used</p>
       <div className="mt-6 grid gap-4 md:grid-cols-3">
-        <Link href="/inbox" className="rounded-2xl border p-5">Inbox</Link>
-        <Link href="/quote/demo-clean" className="rounded-2xl border p-5">Public quote page</Link>
-        <Link href="/settings" className="rounded-2xl border p-5">Settings</Link>
+        <div className="rounded-2xl border border-[#E5E7EB] p-5"><p className="text-3xl font-semibold">128</p><p>Calls caught</p></div>
+        <div className="rounded-2xl border border-[#E5E7EB] p-5"><p className="text-3xl font-semibold">64</p><p>Quotes sent</p></div>
+        <div className="rounded-2xl border border-[#E5E7EB] p-5"><p className="text-3xl font-semibold">$3.2k</p><p>Deposits</p></div>
       </div>
-      <div className="mt-6 rounded-2xl bg-teal-mint p-5 text-sm">Google Calendar booking 🔒 Pro · Review requests 🔒 Starter</div>
+      <p className="mt-6 text-sm">Google Calendar booking locked. Review requests locked.</p>
+      <button className="mt-4 text-sm underline" onClick={() => setOpen(true)}>Show upgrade</button>
+      <PaywallModal open={open} />
     </main>
   );
 }
