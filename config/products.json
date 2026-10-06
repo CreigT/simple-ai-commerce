@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "id": "starter-kit",
+    "name": "Harbor Starter Kit",
+    "summary": "The first three pages a local service shop needs: offer, photo-quote script, and deposit ask.",
+    "price": 1900,
+    "currency": "usd",
+    "type": "one_time",
+    "download": "/downloads/starter-kit.txt",
+    "includes": [
+      "One-page offer you can paste into a text or email",
+      "Photo-quote script for patio, office, and daycare jobs",
+      "Deposit ask with a $50 hold line"
+    ]
+  },
+  {
+    "id": "prompt-pack",
+    "name": "Harbor Prompt Pack",
+    "summary": "Short prompts for missed-call replies, quote follow-ups, and review requests.",
+    "price": 900,
+    "currency": "usd",
+    "type": "one_time",
+    "download": "/downloads/prompt-pack.txt",
+    "includes": [
+      "Missed-call text-back",
+      "Quote follow-up after 24 hours",
+      "Review request after the job"
+    ]
+  },
+  {
+    "id": "photo-quote-kit",
+    "name": "Photo Quote Kit",
+    "summary": "A ready quote card for jobs that start with customer photos.",
+    "price": 2900,
+    "currency": "usd",
+    "type": "one_time",
+    "download": "/downloads/starter-kit.txt",
+    "includes": [
+      "Photo checklist",
+      "Price bands for small, medium, and large jobs",
+      "Deposit line the customer can pay before the visit"
+    ]
+  },
+  {
+    "id": "member-pass",
+    "name": "Harbor Member Pass",
+    "summary": "Monthly pass for the kit library. Cancel anytime.",
+    "price": 900,
+    "currency": "usd",
+    "type": "recurring",
+    "interval": "month",
+    "download": "/downloads/member-pass.txt",
+    "includes": [
+      "All current Harbor kits",
+      "New kit drops while the pass is active",
+      "Unlock page you can open on another device"
+    ]
+  }
+]
